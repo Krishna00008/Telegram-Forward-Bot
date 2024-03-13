@@ -41,7 +41,7 @@ async function forwardMessagesInRange(chatId, sourceChatId, destinationChatId, s
 
     try {
       for (let batchMessageId = messageId; batchMessageId <= endBatchId; batchMessageId++) {
-		await bot.forwardMessage(destinationChatId, sourceChatId, batchMessageId, { disable_notification: true });
+		await bot.copyMessage(destinationChatId, sourceChatId, batchMessageId, { disable_notification: true });
 		console.log(`Forwarded message ${batchMessageId}`);
 		if (batchMessageId !== endBatchId) {
 			await delay(messageDelay); // Introduce a delay between messages in the same batch
