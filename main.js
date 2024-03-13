@@ -5,7 +5,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
 
-const botToken = '7127763072:AAEAeQ5RZwzyuIRjRYkqOxlq4Tc0-hGvZzw'; // Replace with your bot token
+const botToken = '6331847917:AAFgfARaRiHTt6mhcNKqTZD8We4QeCYOd4M'; // Replace with your bot token
 const bot = new TelegramBot(botToken, { polling: true });
 
 const ownerUserId = 6394085741; // Replace with your user ID
@@ -109,8 +109,8 @@ bot.onText(/\/start/, async (msg) => {
   await bot.sendMessage(chatId, startMessage, {
     reply_markup: {
       inline_keyboard: [
-        [{ text: '𝙊𝙬𝙣𝙚𝙧', url: 'https://t.me/gazabho' }],
-        [{ text: '𝙂𝙚𝙩 𝙔𝙤𝙪𝙧𝙨𝙚𝙡𝙛 𝘼𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙', url: 'https://t.me/dev_gagan' }],
+        [{ text: '𝙊𝙬𝙣𝙚𝙧', url: 'https://t.me/om1857' }],
+        [{ text: '𝙂𝙚𝙩 𝙔𝙤𝙪𝙧𝙨𝙚𝙡𝙛 𝘼𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙', url: 'https://t.me/vibrantsamundra' }],
       ],
     },
   });
